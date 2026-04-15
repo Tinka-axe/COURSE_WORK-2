@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE PAGE </title>
+    <style>
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            text-align: left;
+            line-height: 1.6;
+        }
+        img.woody {
+            max-width: 100%;
+            height: fit-content;
+            border-radius: 8px;
+        }
+        .portfolio-container {
+            margin-top: 50px;
+            border-top: 5px solid #333;
+            padding-top: 30px;
+        }
+        .portfolio-section {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .profile-section {
+            align-items: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 0;
+        }
+        .info-box {
+            flex: 1;
+            padding: 20px;
+        }
+        .separator-line {
+            width: 1px;
+            background-color: #ccc;
+            align-self: stretch;
+        }
+        .table-section {
+            display: block;
+        }
+        .portfolio-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .portfolio-table, .portfolio-table th, .portfolio-table td {
+            border: 1px solid black;
+        }
+        .portfolio-table th, .portfolio-table td {
+            height: 40px;
+            padding: 8px;
+            text-align: left;
+        }
+        /* Section 4: Contact */
+        .contact-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO MY SIMPLE PAGE</h1>
+    </header>
+    <img src="woody.jpg" class="woody">
+    <p>A simple web page with a header, an image and a paragraph</p>
+    
+    <h1><u>Universities in Uganda</u></h1>
+    <ul>
+        <li><u>Kyambogo</u>
+            <ol type="i">
+                <li>Mechanics</li>
+                <li>Computing</li>
+                <li>Social Works</li>
+            </ol>
+        </li>
+        <li><u>Makerere</u>
+            <ol type="1">
+                <li>Computing</li>
+                <li>Medicine</li>
+                <ul type="square">
+                    <li>Nursing</li>
+                    <li>Surgery</li>
+                </ul>
+            </ol>
+        </li>
+        <li><u>Mbarara</u>
+            <ul type="circle">
+                <li>Engineering</li>
+                <li>Science</li>
+                <li>Technology</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3><hr>TABLE</h3>
+    <br><hr>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th colspan="5">KYU TIMETABLE</th>
+        </tr>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THUR</th>
+            <th>FRI</th>
+        </tr>
+        <tr align="center">
+            <td colspan="2">BITC</td>
+            <td rowspan="3">BIS</td>
+            <td>BITC</td>
+            <td rowspan="3">BLIS</td>
+        </tr>
+        <tr align="center">
+            <td>BITC</td>
+            <td>BIS</td>
+            <td>BLIS</td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">BLIS</td>
+        </tr>
+        <tr>
+            <td colspan="5" align="center">BREAK</td>
+        </tr>
+    </table>
+
+
+    <!-- PORTFOLIO -->
+    <div class="portfolio-container">
+        <h2>MY PORTFOLIO</h2>
+        <section class="portfolio-section profile-section">
+            <img src="pfp.jpeg" alt="Profile Image" class="profile-img">
+            
+            <div class="profile-text">
+                <h1>TINKA FORTUNATE</h1>
+                <p><strong>Bio:</strong> Enthusiastic professional with a passion for web development and technology. Dedicated to creating impactful solutions and continuous learning.</p>
+            </div>
+        </section>
+        <section class="portfolio-section info-section">
+            <div class="info-box">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>KYAMBOGO UNIVERSITY</strong> -(2024-2027)</li>
+                    <li>Bachelor of Information Technology and Computing</li>
+                    <li><strong>UGANDA MARTYRS SS NAMUGONGO</strong>-(2022-2023)</li>
+                    <li>Uganda Advanced Certificate of Education</li>
+                    <li><strong>NDEJJE SENIOR SECONDARY SCHOOL</strong>-(2017-2021)</li>
+                    <li>Uganda Certificate of Education</li>
+                </ul>
+            </div>
+            <div class="separator-line"></div>
+            <div class="info-box">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Machine Learning</li>
+                    <li>[Your Hobby]</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio-section table-section">
+            <h2>Weekly Habits / Activities</h2>
+            <table class="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>DAY</th>
+                        <th>ACTIVITY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Morning Yoga & Coding Practice</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Reading Technical Documentation</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Project Development Session</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Networking & Online Learning</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Code Review & Portfolio Updates</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Skill Workshop or Personal Project</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Planning for the Week & Relaxation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="portfolio-section contact-section">
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="icon">
+                <span>0783245336</span>
+            </div>
+
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+                <span>tinkafortunate@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X (Twitter)" class="icon">
+                <span>Tinka-axe</span>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
